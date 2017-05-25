@@ -6,6 +6,17 @@
         <?php echo css_asset('bootstrap.min.css'); ?>
         <?php echo js_asset('jquery.min.js'); ?>
         <?php echo js_asset('bootstrap.min.js'); ?> 
+        
+        <script language="javascript">
+            /* script java บังคับให้ผู้ใช้งานป้อนได้เฉพาะตัวเลขเท่านั้น
+             * 
+             */
+function CheckNum(){
+		if (event.keyCode < 48 || event.keyCode > 57){
+		      event.returnValue = false;
+	    	}
+	}
+</script>
       
     </head>
 
@@ -20,7 +31,8 @@
         <form method="post" action="<?php echo site_url('login/chk_login');?>">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input id="email" type="text" class="form-control" name="uname" placeholder="ชื่อผู้ใช้งาน">
+                <!-- input uname ใช้ javascript func-> CheckNum() ในการตรวจสอบ -->
+                <input id="uname" type="text" class="form-control" name="uname" placeholder="ชื่อผู้ใช้งานรหัสประจำตัวนักศึกษา" onKeyPress="CheckNum()">
             </div>
             <br>
             <div class="input-group">

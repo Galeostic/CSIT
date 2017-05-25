@@ -24,7 +24,7 @@ class Fac_Cl extends CI_Controller {
         
           $data['rs']=$this->Fac_Model->get_fac(); 
        $this->load->view('front/get_fac_view',$data);
-   echo"daat". $data['std_id'];
+  // echo"daat". $data['std_id'];
       
       
     }

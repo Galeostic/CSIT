@@ -9,6 +9,7 @@ class Register_std extends CI_Controller {
         parent::__construct();
         $this->load->model('Student');  //ทำการload model student เข้ามาใช้งาน
         $this->load->model('Fac_Model');
+        $this->load->model('Major_Model');
         $this->load->helper('url');
     }
 
@@ -94,7 +95,21 @@ class Register_std extends CI_Controller {
             'fac_id'=>$this->input->post('fac_id'));
         $std_id=$this->input->post('std_id');
         $this->Student->update_fac($data,$std_id);
-            echo $data['fac_id'];
+            //ให้ส่งไปที่ modelและให้โมเดลส่งกลับมาเหมือนกับการส่งไปแก้ไข
+       $this->find_major($std_id,$data);
+         
+    }
+    function find_major($std_id,$data){
+        /*ส่วนในการค้นหาสาขาที่นักศึกษาสังกัดอยู่จากข้อมูลการเลือกคณะ
+         * โดยการเลือกจากการนำ id ของคณะมาทำการเลือก
+         */
+       echo $std_id."ส่งมาจากfind_major<br>";
+       $data['id']=$std_id;  //ทำให้เป็น array เพื่อส่งไปยัง view
+       $fac_id=$data['fac_id'];  
+       echo"ทดสอบการส่งรหัสคณะเข้ามา".$fac_id;
+      $data['rs']=$this->Major_Model->find_major_by_fac_id($fac_id);
+       
+       $this->load->view('front/get_major_view',$data);
     }
 
 }

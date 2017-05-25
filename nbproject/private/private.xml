@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/reg/application/controllers/admin.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/controllers/major_cl.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/admin/admin_page.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/models/major_model.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/models/student.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/models/Fac_Model.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/views/front/get_major_view.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/controllers/register_std.php</file>
         </group>
     </open-files>
 </project-private>

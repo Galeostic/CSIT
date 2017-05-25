@@ -12,6 +12,7 @@ class major_Cl extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model('Fac_Model');
+        $this->load->model('Major_Model');
     }
 
     public function index() {
@@ -19,16 +20,15 @@ class major_Cl extends CI_Controller {
        $this->get_major();
     }
     function get_major(){
-        $data['std_id']=$this->input->post('std_id');
-            
+     
         
           $data['rs']=$this->Major_Model->get_major(); 
-       $this->load->view('admin/get_major_view',$data);
+       $this->load->view('front/get_major_view',$data);
    echo"daat". $data['std_id'];
       
       
     }
-    function get_major_edit(){
+    function edit_major(){
      $var['rs']=$this->Major_Model->get_major(); 
         $this->load->view('admin/Show_major',$var);
     }

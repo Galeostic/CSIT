@@ -34,5 +34,13 @@ class Major_Model extends CI_Model {
        // $this->db->where('major_id', $this->uri->segment(3)); //ดึงข้อมูลจากId
         return $this->db->get('tb_major');
     }
+    function  find_major_by_fac_id($fac_id=null){
+        /* ใช้ในการค้นหาสาขาวิชาโดยการนำรัหัสคณะเข้ามาค้นหา
+         * 
+         */
+      	$this->db->where('fac_id',$fac_id);
+		return $this->db->get('tb_major'); //ส่งกลับไปเพื่อแสดงผล
+        
+    }
 
 }

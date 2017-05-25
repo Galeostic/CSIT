@@ -1,12 +1,12 @@
 <?php
 
 /* 
-model login ใช้ในการตรวจสอบชื่อผู้ใช้งานในระบบ
  */
+model login ใช้ในการตรวจสอบชื่อผู้ใช้งานในระบบ
 class Login extends CI_Model {
 
     function __construct() {
-        parent::__construct();
+        parent::__construct(); 
         
     }
     function chk_login($uname=null, $passwd=null){	
