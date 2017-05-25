@@ -18,7 +18,7 @@
                 <h2>เลือกสาขาวิชาที่เรียน</h2>
             </center>
 
-            <form method="post" action="<?php echo site_url('login/chk_login'); ?>">
+            <form method="post" action="<?php echo site_url('register_std/add_major'); ?>">
 
                 <div class="form-group" >
                     <input type="text" name="std_id" value="<?php echo $id; ?>">

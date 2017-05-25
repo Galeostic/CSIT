@@ -84,18 +84,23 @@ class Register_std extends CI_Controller {
         $this->load->view('front/frm_std_fac', $data);
     }
 
-    function get_major() {
-        //ส่วนของการเรียกรายชื่อสาขาวิชาขึ้นมาแสดง เพื่อทำการเลือก
-        $var['rs'] = $this->Major_Model->get_major();
-
-        $this->load->view();
+    function  add_major(){
+        /*เพิ่มรหัสสาขาวิชาที่สังกัดในข้อมูลนักส
+         * 
+         */
+        $data=array('std_id'=>$this->input->post('std_id'),
+            'std_g_id'=>$this->input->post('std_g_id'),
+            'major_id'=>$this->input->post('major_id')  
+        );
+        $this->Student->add_major($data);  //updata ข้อมูล major_id,std_g_id
+        $this->load->view('front/contact_view',$data); //ส่งข้อมูลไปยังหน้า contact_view
     }
-    function  add_fac(){
+            function  add_fac(){
         $data=array(
             'fac_id'=>$this->input->post('fac_id'));
         $std_id=$this->input->post('std_id');
         $this->Student->update_fac($data,$std_id);
-            //ให้ส่งไปที่ modelและให้โมเดลส่งกลับมาเหมือนกับการส่งไปแก้ไข
+            //ให้ส่งไปที่ modelและให้โมเดลส่งกลับมาเหมือนกับการส่งไปแก้ไข 
        $this->find_major($std_id,$data);
          
     }

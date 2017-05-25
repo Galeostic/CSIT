@@ -37,10 +37,10 @@ class Student extends CI_Model{
         $this->db->where('std_id',$std_id);
         return $this->db->update('tb_student',$data);
     }
-    function update_major(){
-         /* ใช้ในการค้นหาสาขาวิชาโดยการนำรัหัสคณะเข้ามาค้นหาเพื่อนำไป
-         * ใช้ในเพิ่มสาขาวิชาในหน้าเพิ่มสาขาวิชา
+    function add_major($data=null){
+         /*เพิมรหัสสาขาวิชาเข้าระบบและรหัสกลุ่มเช้าระบบ
          */
-    
+     $this->db->where('std_id',$data['std_id']);
+        return $this->db->update('tb_student',$data);
     }
 }
