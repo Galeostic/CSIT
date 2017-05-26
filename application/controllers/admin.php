@@ -11,5 +11,16 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/admin_page');
 	
 }
+// function insert facutly 
+    function  add_fac(){
+        
+    }
+    
+    function  add_major(){
+        //function insert major 
+    }
+    
+
+
 }
 

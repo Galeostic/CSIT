@@ -3,16 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/reg/application/models/student.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/front/login.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/front/view_resume.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/controllers/login.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/front/contact_view.php</file>
+            <file>file:/C:/xampp/htdocs/reg/application/views/front/frm_std1.php</file>
             <file>file:/C:/xampp/htdocs/reg/application/views/front/get_major_view.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/controllers/major_cl.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/controllers/register_std.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/front/add_password_view.php</file>
-            <file>file:/C:/xampp/htdocs/reg/application/views/admin/add_user.php</file>
         </group>
     </open-files>
 </project-private>

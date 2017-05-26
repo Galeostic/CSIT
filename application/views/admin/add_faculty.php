@@ -13,7 +13,7 @@
 
 <div class="container">
   <h2>เพิ่มคณะ</h2>
-  <form class="form-horizontal" action="/action_page.php">
+  <form class="form-horizontal" action="admin/add_fac" method="post">
     <div class="form-group">
       <label class="control-label col-sm-2" for="fac_id">เพิ่มรหัสคณะ:</label>
       <div class="col-sm-10">
