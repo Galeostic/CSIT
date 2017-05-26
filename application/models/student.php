@@ -43,4 +43,14 @@ class Student extends CI_Model{
      $this->db->where('std_id',$data['std_id']);
         return $this->db->update('tb_student',$data);
     }
+    function add_contact($data=null){
+        $this->db->where('std_id',$data['std_id']);
+        return $this->db->update('tb_student',$data);
+    }
+        function add_password($data=null){
+        //ส่วนนี้ใช้ในการเพิ่มนักศึกษาครั้งแรกของการทำงาน
+        if(!empty($data)){
+            return $this->db->insert('tb_login',$data);
+        }
+    }
 }
