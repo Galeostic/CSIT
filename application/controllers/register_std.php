@@ -8,8 +8,8 @@ class Register_std extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model('Student');  //ทำการload model student เข้ามาใช้งาน
-        $this->load->model('Fac_Model');
         $this->load->model('Major_Model');
+       
         $this->load->helper('url');
     }
 
@@ -147,3 +147,4 @@ class Register_std extends CI_Controller {
     }
 
 }
+
