@@ -5,10 +5,9 @@ if (!defined('BASEPATH'))
 
 class Fac_Cl extends CI_Controller {
 
-    /**
-      ส่วนของcontroller  login ทำงานเป็นส่วนแรกของระบบในการตรวจสอบการทำงาน
-      function indexเรียกหน้า login ใน front/login
-     */
+    /**ส่วนของcontroller-การทดลองfunction projcet/file/index.php/controllers/function */ 
+     
+      
     function __construct() {
         parent::__construct();
         $this->load->model('Fac_Model');
