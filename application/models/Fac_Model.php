@@ -1,6 +1,6 @@
 <?php
 
-class Fac_Model extends CI_Model {
+class fac_model extends CI_Model {
 
     function __construct() {
         parent::__construct();
