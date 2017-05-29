@@ -2,6 +2,10 @@
 
 class Admin extends CI_Controller {
 
+	function __construct() {
+        parent::__construct();
+        $this->load->model('Admin_Model');  //ทำการload model admin model เข้ามาใช้งาน
+        $this->load->helper('url');//เรียกใช้ helper url
 	/**
 	ส่วนของcontroller  login ทำงานเป็นส่วนแรกของระบบในการตรวจสอบการทำงาน
 	function indexเรียกหน้า login ใน front/login
