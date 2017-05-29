@@ -28,6 +28,13 @@ class Fac_Cl extends CI_Controller {
       
     }
     
+    
+     function get_fac_B(){  //ส่วนติดต่อกับshow_fac
+              
+          $data['rs']=$this->Fac_Model->get_fac(); 
+       $this->load->view('admin/show_fac',$data);
+    }
+    
     function get_fac_edit(){
      $var['rs']=$this->Fac_Model->get_fac(); 
         $this->load->view('admin/Show',$var);
