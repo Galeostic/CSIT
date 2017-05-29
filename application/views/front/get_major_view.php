@@ -59,7 +59,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="std_g_id">รหัสกลุ่มเรียน:&#10024</label>
+                   <label for="std_g_id">รหัสกลุ่มเรียน:&#10024</label>
 
                     <input type="text" class="form-control" id="std_g_id" placeholder="รหัสกลุ่มเรียน" name="std_g_id" onKeyPress="CheckNum()" >
                 </div>
