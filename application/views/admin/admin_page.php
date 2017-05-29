@@ -29,7 +29,7 @@
         <center>
             <div class="col-lg-4 col-sm-6 text-center"> 
             <i class="fa fa-user-plus" style="font-size:250px;color:red"></i><!--icon ขนาด สี -->
-            <a href="<?php echo site_url('start/page_user'); ?>"><!-- ลิงค์ไปหน้าadd_user-->
+            <a href="<?php echo site_url('call/page_user'); ?>"><!-- ลิงค์ไปหน้าadd_user-->
             <h2>User</h2></a>
            </div>
         </center>
@@ -39,7 +39,7 @@
         <center>
             <div class="col-lg-4 col-sm-6 text-center"> 
             <i class="glyphicon glyphicon-education" style="font-size:250px;color:red"></i>
-            <a href="<?php echo site_url('start/page_show_fac'); ?>">
+            <a href="<?php echo site_url('call/page_show_fac'); ?>">
                 <h2>Faculty</h2></a>
             </div>
          </center>
@@ -49,7 +49,7 @@
        <center> 
            <div class="col-lg-4 col-sm-6 text-center">
            <i  class="fa fa-pie-chart " style="font-size:250px;color: red"></i>
-           <a href="<?php echo site_url('start/page_report'); ?>">
+           <a href="<?php echo site_url('call/page_report'); ?>">
            <h2>Report</h2></a>
             </div> 
      </center>
