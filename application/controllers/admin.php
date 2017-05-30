@@ -12,7 +12,16 @@ class Admin extends CI_Controller {
      
 // function insert facutly 
      public function  add_fac(){
-      
+       $data=array(
+                'fac_id' => $this->input->post('fac_id'),
+                'fac_name' => $this->input->post('fac_name')
+                );
+        $query=$this->db->insert('tb_facuty', $data);
+        if($query) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
         }
     
          
