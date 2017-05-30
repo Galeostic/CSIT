@@ -24,10 +24,13 @@ class Call extends CI_Controller { /* สำหรับเรียกใช้
                 {
        $this->load->view('admin/add_faculty');
         }
-    
-         public function  page_add_major(){
+        public function  page_add_major(){
          $this->load->view('admin/add_major');
         }
+        public function  call_login(){
+         $this->load->view('front/login');
+        }
+         
 }
         
 
