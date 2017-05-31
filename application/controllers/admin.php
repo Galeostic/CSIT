@@ -9,6 +9,22 @@ class Admin extends CI_Controller {
 	/**ส่วนของcontroller  login ทำงานเป็นส่วนแรกของระบบในการตรวจสอบการทำงาน
 	function indexเรียกหน้า login ใน front/login */
        }
+       function add_admin() {
+        /* function ในการเพิ่มข้อมูลนักศึกษาเข้าระบบ ทำการรับค่ามาจาก view frm_std1 
+         * เพิ่มข้อมูล ติดต่อ model student->function add_student
+         * insert std_id,std_fname,std_lname,create  to table student
+         */
+        $data = array(
+            'user' => $this->input->post('user'),
+            'passwd' => $this->input->post('passwd'),
+            'create' => date('Y-m-d H:i:s')
+        );
+
+        if ($this->Add_admin->add_admin($data)) {
+
+            $this->load->view('admin/add_user', $data);
+        }
+    }
      
 // function insert facutly 
      public function  add_fac(){
