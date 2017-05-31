@@ -122,6 +122,7 @@
                         </tfoot>
 
                         <tbody>
+                            
                             <!-- เริ่มการทำloop เพื่อแสดงชื่อคณะ -->
                             <?php foreach ($rs->result() as $value) : ?>
                                 <tr>
