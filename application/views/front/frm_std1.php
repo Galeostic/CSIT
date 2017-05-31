@@ -72,7 +72,8 @@
                 <center>
                     <button type="submit" class="btn btn-primary">&nbsp;ยืนยัน&nbsp;</button>
                     &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;
-                    <button type="reset" class="btn btn-danger">&nbsp;ยกเลิก&nbsp;</button>
+                    <button type="reset" class="btn btn-danger" > <a href="login">ยกเลิก</a></button>
+
                 </center>
             </form>
         </div>
