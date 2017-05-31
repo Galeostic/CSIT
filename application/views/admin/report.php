@@ -9,23 +9,22 @@
 <!--<div align ="left">ดูรายละเอียด</div>-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <!-- CSS-->
   <style type="text/css">
 h1{color:red; font-family:Arial; }
 p{color:black; font-family:Arial; font-weight:bold }
 </style>
-<!-- <link rel="stylesheet" type="views/cssrepost.css" href="cssrepost.css"> -->
- <!-- Latest compiled and minified CSS -->
-<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
 </head>
+
 <body>
 <div class="container" style="margin-top:50px;">
 <div class="tab-content custom-tab-content">
   <div>
-  <!-- Nav tabs -->
+  <!--tab bar -->
   <ul class="nav nav-tabs custom-tab" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i ></i><span class="link-lable">วิทยาศาสตร์และเทคโนโลยี</span></a></li>
    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="link-lable">ครุศาสตร์</span></a></li>
@@ -34,6 +33,7 @@ p{color:black; font-family:Arial; font-weight:bold }
     <li role="presentation"><a href="#test6" aria-controls="test6" role="tab" data-toggle="tab"><span class="link-lable">เทคโนโลยีอุตสาหกรรม</span></a></li>
   </ul>
   <br>
+  <!-- คณะ วิทย-->
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="home"><br>
   <div class="row form-group">
@@ -139,6 +139,7 @@ p{color:black; font-family:Arial; font-weight:bold }
             <span class="progress-completed">60%</span>
         </div>
         </div></div>
+    <!-- คณะ ครุ-->
   <div role="tabpanel" class="tab-pane fade" id="messages"><br>
   <div class="row form-group">
     <div class="col-sm-3">สาขาวิชาการศึกษาปฐมวัย</div><br>  
@@ -232,6 +233,7 @@ p{color:black; font-family:Arial; font-weight:bold }
             <span class="progress-completed">60%</span>
         </div>
         </div></div>
+    <!-- คณะ มนุษย์-->
   <div role="tabpanel" class="tab-pane fade" id="settings"><br>
   <div class="row form-group">
     <div class="col-sm-3">สาขาวิชาการพัฒนาสังคม</div><br>  
@@ -317,6 +319,7 @@ p{color:black; font-family:Arial; font-weight:bold }
             <span class="progress-completed">60%</span>
         </div>
         </div></div>
+    <!--คณะ วิทยาการ -->
   <div role="tabpanel" class="tab-pane fade" id="test5"><br>
   <div class="row form-group">
     <div class="col-sm-2">สาขาวิชานิเทศศาสตร์</div><br>  
@@ -393,6 +396,7 @@ p{color:black; font-family:Arial; font-weight:bold }
         </div>
         </div>
 </div>
+    <!-- คณะเทคโนโลยี-->
 <div role="tabpanel" class="tab-pane fade" id="test6"><br>
 <div class="row form-group">
     <div class="col-sm-3">สาขาวิศวกรรมเครื่องกลยานยนต์</div><br>  
@@ -453,13 +457,13 @@ p{color:black; font-family:Arial; font-weight:bold }
 
 </div>
 </div>
-
+</div>
+</body>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-  
-</script>
 
+
+</html>
