@@ -1,18 +1,12 @@
 <?php
 class Add_admin extends CI_Model {
     
-    public function insert()
-    {
-        $data=array(
-                'user' => $this->input->post('user'),
-                'passwd' => $this->input->post('passwd')
-                );
-        $query=$this->db->insert('tb_login', $data);
-        if($query) {
-            return TRUE;
-        } else {
-            return FALSE;
+    function add_admin($data=null){
+        //ส่วนนี้ใช้ในการเพิ่มนักศึกษาครั้งแรกของการทำงาน
+        if(!empty($data)){
+            return $this->db->insert('tb_login',$data);
         }
     }
+    
 }
     ?>
