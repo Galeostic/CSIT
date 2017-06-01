@@ -97,25 +97,25 @@ input::-webkit-input-placeholder {
 	            </div>
 	  </div> 
             <div class="main-login main-center">
-	<form class="form-horizontal" method="post" action="#">
+	<form class="form-horizontal" method="post" action="<?php echo site_url('admin/add_admin'); ?> OnSubmit="return checkstd_id();">
             
 <div class="form-group">
-<label for="username" class="cols-sm-2 control-label">Username</label>
+<label for="uname" class="cols-sm-2 control-label">Username</label>
         
             <div class="cols-sm-10">
 	<div class="input-group">
 	<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-	<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+	<input type="text" class="form-control" name="uname" id="uname"  placeholder="Enter your Username"/>
 	</div>
             </div>
 </div>
 
             <div class="form-group">
-	<label for="password" class="cols-sm-2 control-label">Password</label>
+	<label for="passwd" class="cols-sm-2 control-label">Password</label>
 	<div class="cols-sm-10">
                                     <div class="input-group">
 		<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-		<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+		<input type="password" class="form-control" name="passwd" id="passwd"  placeholder="Enter your Password"/>
                                     </div>
 	</div>
             </div>
@@ -139,6 +139,7 @@ input::-webkit-input-placeholder {
 </div>
 </div>
 </form>
+                     </from>
 </div>
 </div>
 </div>
